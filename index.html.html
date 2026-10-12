@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#fff0f5" />
+<title>Our Date 💗 — Choose Your Date Vibe</title>
+<style>
+:root{--pink:#f45b8a;--rose:#ff8aa8;--ink:#352b48;--cream:#fffaf7;--muted:#766b80;--lav:#f0eaff;--line:#f4dce6}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;font-family:ui-rounded,"Trebuchet MS",system-ui,sans-serif;color:var(--ink);background:radial-gradient(circle at 10% 5%,#ffe1eb 0,transparent 30%),radial-gradient(circle at 90% 90%,#e9e2ff 0,transparent 32%),#fff8fb;display:flex;justify-content:center;padding:22px 14px 36px}
+button{font:inherit;cursor:pointer;border:0} .app{width:min(100%,520px);min-height:680px;background:rgba(255,255,255,.82);border:1px solid #fff;box-shadow:0 22px 70px #9b557b20;border-radius:28px;overflow:hidden;position:relative}.topbar{display:flex;justify-content:space-between;align-items:center;padding:20px 22px 12px;font-size:14px;font-weight:800}.brand{display:flex;gap:8px;align-items:center}.heart{color:var(--pink);font-size:20px}.step{color:#9a8ba1;font-size:12px;letter-spacing:.08em}.screen{display:none;padding:18px 23px 28px;animation:rise .35s ease}.screen.active{display:block}@keyframes rise{from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:translateY(0)}}
+.hero{text-align:center;padding-top:22px}.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:.2em;color:#b56c8c;font-weight:900}.hero h1{font-family:Georgia,serif;font-size:clamp(38px,9vw,54px);line-height:1.03;margin:13px 0;color:#46305c}.hero h1 span{color:var(--pink)}.hero p{color:var(--muted);line-height:1.7;max-width:330px;margin:14px auto 24px}.art{height:220px;border-radius:23px;margin:20px 0;display:grid;place-items:center;overflow:hidden;position:relative;background:linear-gradient(155deg,#f7b8cc,#f9d9e5 45%,#bcb4f2);box-shadow:inset 0 0 0 1px #fff8}.sun{width:105px;height:105px;border-radius:50%;background:#ffe6a4;position:absolute;top:25px;right:22%;box-shadow:0 0 45px #fff1b9}.hill{position:absolute;bottom:-50px;width:125%;height:150px;border-radius:50% 50% 0 0;background:#9c80bc;transform:rotate(-7deg)}.hill.two{bottom:-76px;left:-28%;background:#66507f;transform:rotate(10deg)}.couple{position:absolute;bottom:24px;font-size:65px;filter:drop-shadow(0 6px 3px #39244933)}.spark{position:absolute;font-size:25px;animation:float 3s ease-in-out infinite}.s1{left:15%;top:27%}.s2{right:15%;top:45%;animation-delay:.7s}.s3{left:28%;top:57%;animation-delay:1.2s}@keyframes float{50%{transform:translateY(-8px) rotate(8deg)}}
+.primary{width:100%;border-radius:999px;padding:15px 18px;background:linear-gradient(100deg,#f65c91,#e7477a);color:white;font-weight:900;box-shadow:0 9px 20px #ee578733;transition:.2s}.primary:hover{transform:translateY(-2px);box-shadow:0 12px 24px #ee578744}.secondary{background:#fff;color:#8d5c78;border:1px solid var(--line);border-radius:999px;padding:12px 16px;font-weight:800}.tiny{text-align:center;color:#a291a5;font-size:12px;margin-top:15px}.heading{text-align:center;margin:7px 0 20px}.heading h2{font: bold 34px Georgia,serif;margin:8px 0}.heading p{color:var(--muted);font-size:14px;line-height:1.5}.options{display:grid;gap:11px}.option{display:flex;align-items:center;gap:14px;width:100%;padding:14px;border:1px solid var(--line);border-radius:18px;background:#fff;text-align:left;transition:.2s;color:var(--ink)}.option:hover{transform:translateX(3px);border-color:#ef8bad;box-shadow:0 8px 20px #e15e8c12}.option .emoji{width:49px;height:49px;display:grid;place-items:center;border-radius:15px;background:#fff0f5;font-size:27px;flex-shrink:0}.option:nth-child(2) .emoji{background:#fff3e5}.option:nth-child(3) .emoji{background:#fff0e8}.option:nth-child(4) .emoji{background:#eaf5ff}.option:nth-child(5) .emoji{background:#ffeaf1}.option strong{display:block;font-size:15px;margin-bottom:4px}.option small{color:var(--muted);font-size:12px}.arrow{margin-left:auto;color:#bc8ba2;font-size:22px}.back{background:none;color:#9a6c87;font-weight:800;padding:4px 0 12px}.detail-hero{height:190px;border-radius:21px;display:grid;place-items:center;font-size:88px;margin:7px 0 19px;background:linear-gradient(140deg,#ffe0eb,#f4eaff)}.detail-title{display:flex;align-items:center;gap:12px}.detail-title .big{font-size:36px}.detail-title h2{font: bold 29px Georgia,serif;margin:0}.detail-title p{color:var(--muted);font-size:14px;line-height:1.55;margin:7px 0 0}.plan{margin:20px 0;padding:17px;background:#fff2f6;border:1px solid #ffe0e9;border-radius:17px}.plan h3{font-size:14px;margin:0 0 12px;color:#d84e7e}.plan ul{list-style:none;padding:0;margin:0;display:grid;gap:10px}.plan li{font-size:13px;color:#615268;line-height:1.45}.plan li:before{content:'✓';color:#ed5b8a;font-weight:900;margin-right:9px}.note{text-align:center;color:#96778f;font:italic 16px Georgia,serif;margin:18px 0}.row{display:flex;gap:10px}.row>*{flex:1}.success{text-align:center;padding-top:28px}.success .bigheart{font-size:76px;animation:beat 1.2s infinite}@keyframes beat{50%{transform:scale(1.1)}}.success h2{font: bold 36px Georgia,serif;margin:12px 0}.success p{color:var(--muted);line-height:1.7}.footer{text-align:center;font-size:11px;color:#b09cac;padding:0 20px 20px}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#392d49;color:#fff;padding:11px 17px;border-radius:999px;font-size:13px;display:none;box-shadow:0 8px 25px #30203a35;z-index:5}.toast.show{display:block}
+@media(min-width:600px){body{padding-top:35px}.app{min-height:700px}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<main class="app">
+  <header class="topbar"><div class="brand"><span class="heart">♥</span> Our Date</div><span class="step" id="step">MADE WITH LOVE</span></header>
+  <section class="screen active" id="welcome">
+    <div class="hero"><div class="eyebrow">A little plan for us</div><h1>Hey, Love! <span>♡</span></h1><p>Life is sweeter when we make time for each other. So… what kind of date are you in the mood for?</p></div>
+    <div class="art" aria-label="Romantic sunset illustration"><div class="sun"></div><div class="hill"></div><div class="hill two"></div><span class="spark s1">✦</span><span class="spark s2">♡</span><span class="spark s3">✧</span><div class="couple">🧑🏻‍🤝‍🧑🏻</div></div>
+    <button class="primary" onclick="showScreen('choices')">Choose our date 💗</button><div class="tiny">No pressure. Just you, me & a little magic ✨</div>
+  </section>
+  <section class="screen" id="choices">
+    <button class="back" onclick="showScreen('welcome')">← Back</button>
+    <div class="heading"><div class="eyebrow">Pick your happy</div><h2>Choose Your<br/>Date Vibe 💕</h2><p>Tap the date you'd love. I'll take it from here!</p></div>
+    <div class="options">
+      <button class="option" onclick="choose('movie')"><span class="emoji">🎬</span><span><strong>Movie Date</strong><small>Popcorn, cozy seats & us</small></span><span class="arrow">›</span></button>
+      <button class="option" onclick="choose('coffee')"><span class="emoji">☕</span><span><strong>Coffee Date</strong><small>Warm cups, deep talks</small></span><span class="arrow">›</span></button>
+      <button class="option" onclick="choose('dinner')"><span class="emoji">🍕</span><span><strong>Dinner Date</strong><small>Good food, better company</small></span><span class="arrow">›</span></button>
+      <button class="option" onclick="choose('drive')"><span class="emoji">🚗</span><span><strong>Long Drive</strong><small>New roads, same us</small></span><span class="arrow">›</span></button>
+      <button class="option" onclick="choose('surprise')"><span class="emoji">❤️</span><span><strong>Surprise Date</strong><small>Because you deserve a surprise</small></span><span class="arrow">›</span></button>
+    </div><div class="tiny">Can't decide? You can come back anytime. ♡</div>
+  </section>
+  <section class="screen" id="detail">
+    <button class="back" onclick="showScreen('choices')">← All date options</button>
+    <div class="detail-hero" id="detailEmoji">🎬</div>
+    <div class="detail-title"><span class="big" id="detailIcon">🎬</span><div><h2 id="detailName">Movie Date</h2><p id="detailDesc"></p></div></div>
+    <div class="plan"><h3>♡ Our little plan</h3><ul id="detailPlan"></ul></div>
+    <div class="note" id="detailNote"></div>
+    <button class="primary" onclick="confirmDate()" id="confirmBtn">This one! 💗</button>
+    <div style="height:10px"></div><button class="secondary" style="width:100%" onclick="shareDate()">Share this date idea ↗</button>
+  </section>
+  <section class="screen" id="confirmed">
+    <div class="success"><div class="bigheart">💌</div><div class="eyebrow">It's a date!</div><h2>Yay, it's a plan! ♡</h2><p id="confirmedText">You've picked a date!</p><p>Now all that's missing is us. Send this little plan to your favorite person and make it happen. ✨</p><button class="primary" onclick="shareDate()">Send the cute invite 💌</button><div style="height:12px"></div><button class="secondary" onclick="showScreen('choices')">Choose another date</button></div>
+  </section>
+  <div class="footer">Made with a little extra love ♡</div>
+</main>
+<div class="toast" id="toast" role="status"></div>
+<script>
+const dates={
+ movie:{name:'Movie Date',icon:'🎬',emoji:'🍿',desc:'Popcorn, cozy seats, and your hand in mine. Sounds perfect, right?',plan:['Pick your favorite movie (or let me choose!)','Get popcorn and your favorite drinks','Enjoy the movie and each other’s company'],note:'Same movie, different genre… but always us. ♡',button:'Let’s watch together 🍿'},
+ coffee:{name:'Coffee Date',icon:'☕',emoji:'☕',desc:'Good coffee, great conversations, and you. That’s all I need.',plan:['Find a cozy café','Talk about everything and anything','Make a little moment special with your smile'],note:'Coffee tastes better when you’re with me. ♡',button:'Coffee sounds perfect ☕'},
+ dinner:{name:'Dinner Date',icon:'🍕',emoji:'🕯️',desc:'Good food, candlelight, and you across the table. What else do we need?',plan:['Choose a nice restaurant or cook together','Enjoy delicious food','Talk, laugh, and fall in love with the moment'],note:'Better food, better mood… with you. ♡',button:'Let’s have dinner 🍕'},
+ drive:{name:'Long Drive',icon:'🚗',emoji:'🌅',desc:'Open roads, our favorite playlist, and endless conversations.',plan:['Pick a scenic route and check the weather','Play our favorite playlist','Stop somewhere pretty for a little view'],note:'Just you, me, and the road. ♡',button:'Let’s go for a drive 🚗'},
+ surprise:{name:'Surprise Date',icon:'❤️',emoji:'🎁',desc:'You deserve something special. I’ll take care of the little details.',plan:['Keep the destination a secret for now','Wear something comfy and bring your smile','Trust me — it’s going to be lovely!'],note:'You + me = my favorite surprise. ♡',button:'I’m excited! ❤️'}
+};let selected='movie';
+function showScreen(id){document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));document.getElementById(id).classList.add('active');document.getElementById('step').textContent=({'welcome':'MADE WITH LOVE','choices':'PICK YOUR DATE','detail':'YOUR DATE PLAN','confirmed':'DATE CONFIRMED'})[id];window.scrollTo({top:0,behavior:'smooth'});}
+function choose(key){selected=key;const d=dates[key];document.getElementById('detailEmoji').textContent=d.emoji;document.getElementById('detailIcon').textContent=d.icon;document.getElementById('detailName').textContent=d.name;document.getElementById('detailDesc').textContent=d.desc;document.getElementById('detailPlan').innerHTML=d.plan.map(x=>'<li>'+x+'</li>').join('');document.getElementById('detailNote').textContent=d.note;document.getElementById('confirmBtn').textContent=d.button;history.replaceState(null,'',location.pathname+'?date='+key);showScreen('detail');}
+function confirmDate(){document.getElementById('confirmedText').textContent='Your pick: '+dates[selected].icon+' '+dates[selected].name+'! Save this moment and make a plan together.';showScreen('confirmed');}
+function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2600)}
+async function shareDate(){const d=dates[selected];const url=location.href;const text='Hey you 💗 I picked a date for us: '+d.icon+' '+d.name+'! '+d.note+'\nChoose yours here: '+url;try{if(navigator.share){await navigator.share({title:'Our Date 💗',text,url});}else if(navigator.clipboard&&location.protocol==='https:'){await navigator.clipboard.writeText(text);toast('Invite copied! Paste it into your chat 💌')}else{prompt('Copy this invite and send it:',text)}}catch(e){if(e.name!=='AbortError')prompt('Copy this invite and send it:',text)}}
+// Open a specific date directly when the shared URL contains ?date=movie (or another option).
+const params=new URLSearchParams(location.search);const key=params.get('date');if(key&&dates[key]){choose(key)}
+</script>
+</body>
+</html>
